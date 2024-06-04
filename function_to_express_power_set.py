@@ -20,4 +20,4 @@ for subset in powerset:
     powerset_list.append(list(subset))
 
 #Preview output
-print(powerset_list) 
+print(f"Power set of '{{1,2,3}}' is: {powerset_list}") 

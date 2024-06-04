@@ -6,14 +6,18 @@
 
 from itertools import chain, combinations
 
-def powerset(iterable):
-    # Convert the set to a list to work with itertools
-    list_of_elements = list(iterable)
-    # Generate all possible subsets by iterating over all lengths from 0 to len(list_of_elements)
-    subsets = [list(subset) for subset in chain(*[combinations(list_of_elements, r) for r in range(len(list_of_elements) + 1)])]
-    return subsets
-
-# Example usage
+# Initialise variables
 set = {1, 2, 3}
-result = powerset(set)
-print(result)
+powerset = []
+
+# Iterate and addpossible combinations of set to powerset list
+for i in range(len(set) + 1):
+    powerset.extend(combinations(set, i))
+
+# Populate each combinations as a chained list
+powerset_list = []
+for subset in powerset:
+    powerset_list.append(list(subset))
+
+#Preview output
+print(powerset_list) 

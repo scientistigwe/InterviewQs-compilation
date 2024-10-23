@@ -1,0 +1,31 @@
+{
+  "sqltools.connections": [
+    {
+      "previewLimit": 50,
+      "server": "localhost",
+      "port": 5432,
+      "driver": "PostgreSQL",
+      "name": "interviewQs",
+      "database": "interviewqs_compilations_db",
+      "username": "postgres"
+    },
+    {
+      "previewLimit": 50,
+      "server": "localhost",
+      "port": 5432,
+      "driver": "PostgreSQL",
+      "name": "interviewQs Bank",
+      "database": "interviewqs_compilations_db",
+      "username": "interview"
+    },
+    {
+      "previewLimit": 50,
+      "server": "localhost",
+      "port": 5432,
+      "driver": "PostgreSQL",
+      "name": "InterviewQs",
+      "database": "interviewqs_compilations_db",
+      "username": "interview"
+    }
+  ]
+}

@@ -17,3 +17,8 @@
 def canElementsBeEqual(a, b, c):
     if():
         pass
+
+t = (1,2)
+
+t += (3,4)
+print(t)

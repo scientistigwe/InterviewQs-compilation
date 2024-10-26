@@ -218,3 +218,31 @@ SELECT product_id
 FROM sales_table
 ORDER BY revenue DESC
 LIMIT 5
+
+-- 13.	Employee Count: 
+-- The HR department has requested the total number of employees in your company.
+-- Write a SQL query to count all employees in the employees table.
+SELECT COUNT(employee_id) AS 'Number of Employee'
+FROM employee_table
+
+OR
+
+SELECT COUNT (DISTINCT (first_name, last_name, birth_date)) AS 'Employee Count'
+FROM employee_table
+
+
+-- 14.	Pending Orders: 
+-- The operations team wants to track all orders that are still pending.
+-- Write a query to list all pending orders from the orders table.
+
+SELECT order_id, status
+FROM order_table
+WHERE status = 'Pending';
+
+-- 15. Customer Search: 
+-- You have been asked to find all customers whose last name starts with "S" for a special offer.
+-- Write the query to retrieve this data.
+
+SELECT *
+FROM customer_info
+WHERE SPLIT_PART(customer_name, ' ', 2) LIKE 'S%';
